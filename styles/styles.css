@@ -1,0 +1,139 @@
+h1, h2 {
+
+}
+
+p {
+
+}
+
+header {
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+}
+
+nav {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+nav a {
+    margin: 10px;
+    color: black;
+}
+
+
+.about-me {
+    width: 500px;
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.photo-container {
+    margin: 0;
+    display: inline-block;
+    width: 400px;
+    position: relative;
+    left: 120px;
+    top: 60px;
+}
+
+.photo-container img {
+    width: 400px;
+}
+
+.photo-container #next, #previous {
+    position: absolute;
+    top: 120px;
+}
+
+.photo-container #previous {
+    left: 3px;
+}
+
+.photo-container #next {
+    right: 3px;
+}
+
+.projects {
+    margin-top: 70px;
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container img {
+    width: 200px;
+    height: 200px;
+    margin: 20px 50px;
+}
+
+.skills h2 {
+    margin-left: 10px;
+}
+
+i {
+    font-size: 2em;
+    margin: 5px 20px;
+}
+
+@media only screen and (max-width: 1225px) {
+    .about-me {
+        margin: 0;
+        width: 100%;
+    }
+
+    .photo-container {
+        top: 0;
+        left: 350px;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .photo-container {
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    header h1 {
+        display: block;
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        display: block;
+        width: 220px;
+        margin: 0 auto;
+    }
+    
+    .photo-container {
+        left: 0;
+    }
+}
